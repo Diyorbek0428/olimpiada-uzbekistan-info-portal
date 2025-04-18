@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState } from 'react';
 
 type Language = 'uz' | 'en' | 'ru';
@@ -22,7 +21,27 @@ const translations: Translations = {
     silverMedals: "Kumush medallar",
     bronzeMedals: "Bronza medallar",
     nextGames: "Keyingi O'yinlar",
-    winterOlympics: "2026-yil Milano-Kortina qishki Olimpiya o'yinlari"
+    winterOlympics: "2026-yil Milano-Kortina qishki Olimpiya o'yinlari",
+    
+    // Navigation translations
+    about: "O'zbekiston MOQ",
+    committee: "Qo'mita",
+    medicalCenter: "Tibbiyot markazi",
+    management: "Rahbariyat va hodimlar",
+    chairman: "Rais",
+    generalSecretary: "Bosh kotib",
+    viceChairman: "Rais o'rinbosari",
+    sportsMedicine: "Sport tibbiyot",
+    interview: "Intervyu",
+    federations: "Federatsiyalar",
+    uzSportsFederation: "O'zbekiston sport federatsiyasi",
+    intSportsFederation: "Xalqaro sport federatsiyasi",
+    games: "O'yinlar",
+    olympicGames: "Olimpiya o'yinlari",
+    asianGames: "Osiyo o'yinlari",
+    physicalEducation: "Badan tarbiya mashg'ulotlari",
+    internationalRelations: "Xalqaro munosabatlar",
+    search: "Izlash..."
   },
   en: {
     committee: "National Olympic Committee of Uzbekistan",
@@ -36,7 +55,27 @@ const translations: Translations = {
     silverMedals: "Silver medals",
     bronzeMedals: "Bronze medals",
     nextGames: "Next Games",
-    winterOlympics: "2026 Milano-Cortina Winter Olympics"
+    winterOlympics: "2026 Milano-Cortina Winter Olympics",
+    
+    // Navigation translations
+    about: "Uzbekistan NOC",
+    committee: "Committee",
+    medicalCenter: "Medical Center",
+    management: "Management and Staff",
+    chairman: "Chairman",
+    generalSecretary: "General Secretary",
+    viceChairman: "Vice Chairman",
+    sportsMedicine: "Sports Medicine",
+    interview: "Interview",
+    federations: "Federations",
+    uzSportsFederation: "Uzbekistan Sports Federation",
+    intSportsFederation: "International Sports Federation",
+    games: "Games",
+    olympicGames: "Olympic Games",
+    asianGames: "Asian Games",
+    physicalEducation: "Physical Education",
+    internationalRelations: "International Relations",
+    search: "Search..."
   },
   ru: {
     committee: "Национальный Олимпийский Комитет Узбекистана",
@@ -50,7 +89,27 @@ const translations: Translations = {
     silverMedals: "Серебряные медали",
     bronzeMedals: "Бронзовые медали",
     nextGames: "Следующие игры",
-    winterOlympics: "Зимние Олимпийские игры 2026 Милано-Кортина"
+    winterOlympics: "Зимние Олимпийские игры 2026 Милано-Кортина",
+    
+    // Navigation translations
+    about: "НОК Узбекистана",
+    committee: "Комитет",
+    medicalCenter: "Медицинский центр",
+    management: "Руководство и персонал",
+    chairman: "Председатель",
+    generalSecretary: "Генеральный секретарь",
+    viceChairman: "Заместитель председателя",
+    sportsMedicine: "Спортивная медицина",
+    interview: "Интервью",
+    federations: "Федерации",
+    uzSportsFederation: "Спортивная федерация Узбекистана",
+    intSportsFederation: "Международная спортивная федерация",
+    games: "Игры",
+    olympicGames: "Олимпийские игры",
+    asianGames: "Азиатские игры",
+    physicalEducation: "Физическое воспитание",
+    internationalRelations: "Международные отношения",
+    search: "Поиск..."
   }
 };
 

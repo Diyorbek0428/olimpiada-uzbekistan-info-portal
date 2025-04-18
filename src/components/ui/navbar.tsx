@@ -31,8 +31,8 @@ export const Navbar = () => {
             <Link to="/" className="flex items-center gap-3">
               <img src="/lovable-uploads/43e2d64d-2861-45b7-96b4-583d5d28ab7b.png" alt="Logo" className="h-16" />
               <div>
-                <h1 className="text-xl font-bold text-gray-800">O'zbekiston Milliy Olimpiya</h1>
-                <h2 className="text-lg text-gray-600">Qo'mitasi</h2>
+                <h1 className="text-xl font-bold text-gray-800">{t('committee')}</h1>
+                <h2 className="text-lg text-gray-600">{t('subtitle')}</h2>
                 <div className="flex gap-2 text-sm text-gray-500">
                   <span>CITIUS</span>
                   <span>ALTIUS</span>
@@ -45,7 +45,11 @@ export const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Search className="w-5 h-5" />
-              <Input type="search" placeholder={language === 'uz' ? "Izlash..." : language === 'ru' ? "Поиск..." : "Search..."} className="w-40" />
+              <Input 
+                type="search" 
+                placeholder={t('search')} 
+                className="w-40" 
+              />
             </div>
             
             <div className="flex items-center gap-4">
@@ -82,52 +86,52 @@ export const Navbar = () => {
         <NavigationMenu className="py-2">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>O'zbekiston MOQ</NavigationMenuTrigger>
+              <NavigationMenuTrigger>{t('about')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Qo'mita</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Tibbiyot markazi</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Rahbariyat va hodimlar</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('committee')}</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('medicalCenter')}</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('management')}</NavigationMenuLink></li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Yangiliklar</NavigationMenuTrigger>
+              <NavigationMenuTrigger>{t('news')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Sport tibbiyot</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Intervyu</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('sportsMedicine')}</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('interview')}</NavigationMenuLink></li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Federatsiyalar</NavigationMenuTrigger>
+              <NavigationMenuTrigger>{t('federations')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">O'zbekiston sport federatsiyasi</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Xalqaro sport federatsiyasi</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('uzSportsFederation')}</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('intSportsFederation')}</NavigationMenuLink></li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>O'yinlar</NavigationMenuTrigger>
+              <NavigationMenuTrigger>{t('games')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Olimpiya o'yinlari</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Osiyo o'yinlari</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Badan tarbiya mashg'ulotlari</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('olympicGames')}</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('asianGames')}</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('physicalEducation')}</NavigationMenuLink></li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Xalqaro munosabatlar</NavigationMenuTrigger>
+              <NavigationMenuTrigger>{t('internationalRelations')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">Media galereya</NavigationMenuLink></li>
+                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('mediaGallery')}</NavigationMenuLink></li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
