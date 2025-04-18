@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -11,6 +10,7 @@ import {
 import { Facebook, Instagram, Search, Twitter } from "lucide-react";
 import { Send as Telegram } from "lucide-react";
 import { Input } from "./input";
+import { useLanguage } from "@/context/LanguageContext";
 import {
   Select,
   SelectContent,
@@ -20,6 +20,8 @@ import {
 } from "./select";
 
 export const Navbar = () => {
+  const { language, setLanguage, t } = useLanguage();
+
   return (
     <header className="w-full bg-white">
       <div className="container mx-auto px-4">
@@ -43,7 +45,7 @@ export const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Search className="w-5 h-5" />
-              <Input type="search" placeholder="Izlash..." className="w-40" />
+              <Input type="search" placeholder={language === 'uz' ? "Izlash..." : language === 'ru' ? "Поиск..." : "Search..."} className="w-40" />
             </div>
             
             <div className="flex items-center gap-4">
@@ -59,7 +61,10 @@ export const Navbar = () => {
               <a href="#" className="text-gray-600 hover:text-blue-500">
                 <Telegram className="w-5 h-5" />
               </a>
-              <Select defaultValue="uz">
+              <Select 
+                value={language}
+                onValueChange={(value) => setLanguage(value as 'uz' | 'en' | 'ru')}
+              >
                 <SelectTrigger className="w-[70px]">
                   <SelectValue />
                 </SelectTrigger>
