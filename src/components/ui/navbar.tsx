@@ -11,6 +11,13 @@ import {
 import { Facebook, Instagram, Search, Twitter } from "lucide-react";
 import { Send as Telegram } from "lucide-react";
 import { Input } from "./input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./select";
 
 export const Navbar = () => {
   return (
@@ -52,7 +59,16 @@ export const Navbar = () => {
               <a href="#" className="text-gray-600 hover:text-blue-500">
                 <Telegram className="w-5 h-5" />
               </a>
-              <button className="px-2 py-1 text-sm border rounded">O'z</button>
+              <Select defaultValue="uz">
+                <SelectTrigger className="w-[70px]">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="uz">O'z</SelectItem>
+                  <SelectItem value="en">En</SelectItem>
+                  <SelectItem value="ru">Ру</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
           </div>
         </div>
