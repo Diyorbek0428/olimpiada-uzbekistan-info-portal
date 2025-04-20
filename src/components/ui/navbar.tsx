@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -29,7 +30,34 @@ export const Navbar = () => {
         <div className="flex justify-between items-center py-4 border-b">
           <div className="flex items-center gap-6">
             <Link to="/" className="flex items-center gap-3">
-              <img src="/lovable-uploads/43e2d64d-2861-45b7-96b4-583d5d28ab7b.png" alt="Logo" className="h-16" />
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 100 100" 
+                className="h-16 w-16"
+                fill="none"
+              >
+                {/* Olympic Rings Inspired Background */}
+                <rect x="0" y="0" width="100" height="100" rx="10" fill="#0081C8" />
+                
+                {/* Stylized Olympic Rings */}
+                <circle cx="30" cy="40" r="15" stroke="#FFFFFF" strokeWidth="3" />
+                <circle cx="55" cy="40" r="15" stroke="#FFFFFF" strokeWidth="3" />
+                <circle cx="80" cy="40" r="15" stroke="#FFFFFF" strokeWidth="3" />
+                <circle cx="42.5" cy="60" r="15" stroke="#FFFFFF" strokeWidth="3" />
+                <circle cx="67.5" cy="60" r="15" stroke="#FFFFFF" strokeWidth="3" />
+                
+                {/* Uzbekistan Text */}
+                <text 
+                  x="50" 
+                  y="90" 
+                  textAnchor="middle" 
+                  fill="#FFFFFF" 
+                  fontSize="12" 
+                  fontWeight="bold"
+                >
+                  O'ZBEKISTON
+                </text>
+              </svg>
               <div>
                 <h1 className="text-xl font-bold text-gray-800">{t('committee')}</h1>
                 <h2 className="text-lg text-gray-600">{t('subtitle')}</h2>
