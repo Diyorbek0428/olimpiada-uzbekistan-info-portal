@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -59,7 +58,7 @@ export const Navbar = () => {
                 </text>
               </svg>
               <div>
-                <h1 className="text-xl font-bold text-gray-800">{t('committee')}</h1>
+                <h1 className="text-xl font-bold text-gray-800">O'zbekiston Olimpiadasi</h1>
                 <h2 className="text-lg text-gray-600">{t('subtitle')}</h2>
                 <div className="flex gap-2 text-sm text-gray-500">
                   <span>CITIUS</span>
