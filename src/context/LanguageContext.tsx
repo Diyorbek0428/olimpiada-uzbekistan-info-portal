@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState } from 'react';
 
 type Language = 'uz' | 'en' | 'ru';
@@ -40,7 +41,15 @@ const translations: Translations = {
     olympicGames: "Olimpiya o'yinlari",
     physicalEducation: "Badan tarbiya mashg'ulotlari",
     internationalRelations: "Xalqaro munosabatlar",
-    search: "Izlash..."
+    search: "Izlash...",
+    
+    // New translations
+    contactInstructor: "Murabbiy bilan bog'laning",
+    personalTraining: "Shaxsiy mashg'ulotlar uchun mutaxassislarimiz bilan bog'laning",
+    contact: "Bog'lanish",
+    exerciseCategories: "Mashq turlari",
+    recommendedEquipment: "Tavsiya etilgan jihozlar",
+    healthPhysicalDevelopment: "Salomatlik va jismoniy rivojlanish uchun tavsiya etilgan mashg'ulotlar"
   },
   en: {
     committee: "National Olympic Committee of Uzbekistan",
@@ -73,7 +82,15 @@ const translations: Translations = {
     olympicGames: "Olympic Games",
     physicalEducation: "Physical Education",
     internationalRelations: "International Relations",
-    search: "Search..."
+    search: "Search...",
+    
+    // New translations
+    contactInstructor: "Contact an Instructor",
+    personalTraining: "Contact our specialists for personalized training",
+    contact: "Contact",
+    exerciseCategories: "Exercise Categories",
+    recommendedEquipment: "Recommended Equipment",
+    healthPhysicalDevelopment: "Recommended exercises for health and physical development"
   },
   ru: {
     committee: "Национальный Олимпийский Комитет Узбекистана",
@@ -106,7 +123,15 @@ const translations: Translations = {
     olympicGames: "Олимпийские игры",
     physicalEducation: "Физическое воспитание",
     internationalRelations: "Международные отношения",
-    search: "Поиск..."
+    search: "Поиск...",
+    
+    // New translations
+    contactInstructor: "Свяжитесь с инструктором",
+    personalTraining: "Свяжитесь с нашими специалистами для индивидуальных тренировок",
+    contact: "Связаться",
+    exerciseCategories: "Категории упражнений",
+    recommendedEquipment: "Рекомендуемое оборудование",
+    healthPhysicalDevelopment: "Рекомендуемые упражнения для здоровья и физического развития"
   }
 };
 
