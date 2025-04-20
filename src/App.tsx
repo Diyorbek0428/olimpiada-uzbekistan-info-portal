@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./context/LanguageContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import PhysicalEducation from "./pages/PhysicalEducation";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/physical-education" element={<PhysicalEducation />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

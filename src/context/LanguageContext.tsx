@@ -22,10 +22,10 @@ const translations: Translations = {
     bronzeMedals: "Bronza medallar",
     nextGames: "Keyingi O'yinlar",
     winterOlympics: "2026-yil Milano-Kortina qishki Olimpiya o'yinlari",
+    language: "uz",
     
     // Navigation translations
     about: "O'zbekiston MOQ",
-    committee: "Qo'mita",
     medicalCenter: "Tibbiyot markazi",
     management: "Rahbariyat va hodimlar",
     chairman: "Rais",
@@ -38,7 +38,6 @@ const translations: Translations = {
     intSportsFederation: "Xalqaro sport federatsiyasi",
     games: "O'yinlar",
     olympicGames: "Olimpiya o'yinlari",
-    asianGames: "Osiyo o'yinlari",
     physicalEducation: "Badan tarbiya mashg'ulotlari",
     internationalRelations: "Xalqaro munosabatlar",
     search: "Izlash..."
@@ -56,10 +55,10 @@ const translations: Translations = {
     bronzeMedals: "Bronze medals",
     nextGames: "Next Games",
     winterOlympics: "2026 Milano-Cortina Winter Olympics",
+    language: "en",
     
     // Navigation translations
     about: "Uzbekistan NOC",
-    committee: "Committee",
     medicalCenter: "Medical Center",
     management: "Management and Staff",
     chairman: "Chairman",
@@ -72,7 +71,6 @@ const translations: Translations = {
     intSportsFederation: "International Sports Federation",
     games: "Games",
     olympicGames: "Olympic Games",
-    asianGames: "Asian Games",
     physicalEducation: "Physical Education",
     internationalRelations: "International Relations",
     search: "Search..."
@@ -90,10 +88,10 @@ const translations: Translations = {
     bronzeMedals: "Бронзовые медали",
     nextGames: "Следующие игры",
     winterOlympics: "Зимние Олимпийские игры 2026 Милано-Кортина",
+    language: "ru",
     
     // Navigation translations
     about: "НОК Узбекистана",
-    committee: "Комитет",
     medicalCenter: "Медицинский центр",
     management: "Руководство и персонал",
     chairman: "Председатель",
@@ -106,7 +104,6 @@ const translations: Translations = {
     intSportsFederation: "Международная спортивная федерация",
     games: "Игры",
     olympicGames: "Олимпийские игры",
-    asianGames: "Азиатские игры",
     physicalEducation: "Физическое воспитание",
     internationalRelations: "Международные отношения",
     search: "Поиск..."

@@ -149,7 +149,11 @@ export const Navbar = () => {
                 <ul className="grid w-48 p-2">
                   <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('olympicGames')}</NavigationMenuLink></li>
                   <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('asianGames')}</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('physicalEducation')}</NavigationMenuLink></li>
+                  <li>
+                    <Link to="/physical-education" className="block p-2 hover:bg-gray-100">
+                      {t('physicalEducation')}
+                    </Link>
+                  </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
