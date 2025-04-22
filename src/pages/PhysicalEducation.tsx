@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Navbar } from "@/components/ui/navbar";
+import Navbar from "@/components/ui/navbar";
 import { useLanguage } from "@/context/LanguageContext";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";

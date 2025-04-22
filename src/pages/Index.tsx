@@ -1,5 +1,5 @@
 
-import { Navbar } from "@/components/ui/navbar";
+import Navbar from "@/components/ui/navbar";
 import { NewsCard } from "@/components/NewsCard";
 import { useLanguage } from "@/context/LanguageContext";
 import {
