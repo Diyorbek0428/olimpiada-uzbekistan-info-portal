@@ -1,5 +1,3 @@
-
-
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -21,7 +19,7 @@ import {
   SelectValue,
 } from "./select";
 
-export const Navbar = () => {
+const Navbar = () => {
   const { language, setLanguage, t } = useLanguage();
 
   return (
@@ -152,12 +150,12 @@ export const Navbar = () => {
                           </li>
                           <li>
                             <a href="https://www.olympic.uz/oz/manage/ispolnitelnyj-komitet" className="block p-2 hover:bg-gray-100">
-                              Ijroiya qo'mitasi
+                              {t('executiveCommittee')}
                             </a>
                           </li>
                           <li>
                             <a href="https://www.olympic.uz/oz/manage/sotrudniki" className="block p-2 hover:bg-gray-100">
-                              Ijroiya apparati
+                              {t('executiveApparatus')}
                             </a>
                           </li>
                         </ul>
@@ -246,3 +244,4 @@ export const Navbar = () => {
   );
 };
 
+export default Navbar;
