@@ -116,9 +116,50 @@ export const Navbar = () => {
               <NavigationMenuTrigger>{t('about')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('committee')}</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('medicalCenter')}</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('management')}</NavigationMenuLink></li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/menu/komitet" className="block p-2 hover:bg-gray-100">
+                      {t('committee')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/menu/meditsinskij-tsentr" className="block p-2 hover:bg-gray-100">
+                      {t('medicalCenter')}
+                    </a>
+                  </li>
+                  <li>
+                    <NavigationMenuTrigger className="w-full text-left">
+                      {t('management')}
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid w-48 p-2">
+                        <li>
+                          <a href="https://www.olympic.uz/oz/manage/predsedatel" className="block p-2 hover:bg-gray-100">
+                            {t('chairman')}
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.olympic.uz/oz/manage/generalnyj-sekretar" className="block p-2 hover:bg-gray-100">
+                            {t('generalSecretary')}
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.olympic.uz/oz/manage/zamestiteli-predsedatelja" className="block p-2 hover:bg-gray-100">
+                            {t('viceChairman')}
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.olympic.uz/oz/manage/ispolnitelnyj-komitet" className="block p-2 hover:bg-gray-100">
+                            Ijroiya qo'mitasi
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.olympic.uz/oz/manage/sotrudniki" className="block p-2 hover:bg-gray-100">
+                            Ijroiya apparati
+                          </a>
+                        </li>
+                      </ul>
+                    </NavigationMenuContent>
+                  </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -127,8 +168,16 @@ export const Navbar = () => {
               <NavigationMenuTrigger>{t('news')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('sportsMedicine')}</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('interview')}</NavigationMenuLink></li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/news/category/sport-i-meditsina" className="block p-2 hover:bg-gray-100">
+                      {t('sportsMedicine')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/news/category/intervyu" className="block p-2 hover:bg-gray-100">
+                      {t('interview')}
+                    </a>
+                  </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -137,8 +186,16 @@ export const Navbar = () => {
               <NavigationMenuTrigger>{t('federations')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('uzSportsFederation')}</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('intSportsFederation')}</NavigationMenuLink></li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/federatsii/uzbekistonskij-sport-federatsiya" className="block p-2 hover:bg-gray-100">
+                      {t('uzSportsFederation')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/federatsii/internationalnyj-sport-federatsiya" className="block p-2 hover:bg-gray-100">
+                      {t('intSportsFederation')}
+                    </a>
+                  </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -147,8 +204,16 @@ export const Navbar = () => {
               <NavigationMenuTrigger>{t('games')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('olympicGames')}</NavigationMenuLink></li>
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('asianGames')}</NavigationMenuLink></li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/olympik-olympiad" className="block p-2 hover:bg-gray-100">
+                      {t('olympicGames')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/asian-olympiad" className="block p-2 hover:bg-gray-100">
+                      {t('asianGames')}
+                    </a>
+                  </li>
                   <li>
                     <Link to="/physical-education" className="block p-2 hover:bg-gray-100">
                       {t('physicalEducation')}
@@ -162,7 +227,11 @@ export const Navbar = () => {
               <NavigationMenuTrigger>{t('internationalRelations')}</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-48 p-2">
-                  <li><NavigationMenuLink className="block p-2 hover:bg-gray-100">{t('mediaGallery')}</NavigationMenuLink></li>
+                  <li>
+                    <a href="https://www.olympic.uz/oz/media-galereya" className="block p-2 hover:bg-gray-100">
+                      {t('mediaGallery')}
+                    </a>
+                  </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
