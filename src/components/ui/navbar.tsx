@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -127,38 +128,40 @@ export const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <NavigationMenuTrigger className="w-full text-left">
-                      {t('management')}
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-48 p-2">
-                        <li>
-                          <a href="https://www.olympic.uz/oz/manage/predsedatel" className="block p-2 hover:bg-gray-100">
-                            {t('chairman')}
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.olympic.uz/oz/manage/generalnyj-sekretar" className="block p-2 hover:bg-gray-100">
-                            {t('generalSecretary')}
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.olympic.uz/oz/manage/zamestiteli-predsedatelja" className="block p-2 hover:bg-gray-100">
-                            {t('viceChairman')}
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.olympic.uz/oz/manage/ispolnitelnyj-komitet" className="block p-2 hover:bg-gray-100">
-                            Ijroiya qo'mitasi
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.olympic.uz/oz/manage/sotrudniki" className="block p-2 hover:bg-gray-100">
-                            Ijroiya apparati
-                          </a>
-                        </li>
-                      </ul>
-                    </NavigationMenuContent>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger className="w-full text-left">
+                        {t('management')}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul className="grid w-48 p-2">
+                          <li>
+                            <a href="https://www.olympic.uz/oz/manage/predsedatel" className="block p-2 hover:bg-gray-100">
+                              {t('chairman')}
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.olympic.uz/oz/manage/generalnyj-sekretar" className="block p-2 hover:bg-gray-100">
+                              {t('generalSecretary')}
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.olympic.uz/oz/manage/zamestiteli-predsedatelja" className="block p-2 hover:bg-gray-100">
+                              {t('viceChairman')}
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.olympic.uz/oz/manage/ispolnitelnyj-komitet" className="block p-2 hover:bg-gray-100">
+                              Ijroiya qo'mitasi
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.olympic.uz/oz/manage/sotrudniki" className="block p-2 hover:bg-gray-100">
+                              Ijroiya apparati
+                            </a>
+                          </li>
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
                   </li>
                 </ul>
               </NavigationMenuContent>
